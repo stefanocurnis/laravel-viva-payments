@@ -73,6 +73,7 @@ class TransactionPaymentCreated
         public readonly ?int $DigitalWalletId,
         public readonly ?string $ResponseEventId,
         public readonly ?string $ElectronicCommerceIndicator,
+        public readonly ?string $BinId,
     ) {
     }
 

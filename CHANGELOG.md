@@ -5,6 +5,18 @@ All notable changes to `sebdesign/laravel-viva-payments` will be documented in t
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [6.0.0-beta.2] - 2023-02-27
+
+### Added
+
+-   Add `BinId` to `TransactionPaymentCreated`
+
+## [6.0.0-beta.1] - 2023-02-02
+
+### Added
+
+-   Laravel 10.x Compatibility ([#30](https://github.com/sebdesign/laravel-viva-payments/issues/30))
+
 ## [6.0.0-alpha.6] - 2022-12-30
 
 ### Fixed
