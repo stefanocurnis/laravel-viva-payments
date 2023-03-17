@@ -74,6 +74,11 @@ class TransactionPaymentCreated
         public readonly ?string $ResponseEventId,
         public readonly ?string $ElectronicCommerceIndicator,
         public readonly ?string $BinId,
+        public readonly ?string $Ucaf,
+        public readonly ?string $DualMessage,
+        public readonly ?string $AcquirerApproved,
+        public readonly ?string $AuthorizationId,
+        public readonly ?string $OrderServiceId,
     ) {
     }
 

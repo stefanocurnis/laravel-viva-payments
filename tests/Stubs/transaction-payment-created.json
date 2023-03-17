@@ -65,7 +65,13 @@
         "CardTypeId": 0,
         "DigitalWalletId": 2,
         "ResponseEventId": null,
-        "ElectronicCommerceIndicator": "5"
+        "ElectronicCommerceIndicator": "5",
+        "BinId": null,
+        "Ucaf": null,
+        "DualMessage": null,
+        "AcquirerApproved": null,
+        "AuthorizationId": null,
+        "OrderServiceId": null
     },
     "Created": "2021-09-02T07:39:28.8496795Z",
     "CorrelationId": "21-245-DB33F8C9",
