@@ -22,18 +22,18 @@ Install the package through Composer.
 
 This package requires PHP 8.1 and Laravel 9.0 or higher, and uses Guzzle 7.0 to make API calls. Use the appropriate version according to your dependencies.
 
-| Viva Payments for Laravel   | Guzzle     | Laravel |
-|-----------------------------|------------|---------|
-| ^6.0                        | ^7.0       | ^9.0    |
-| ^5.2                        | ^7.0       | ^9.0    |
-| ^5.1                        | ^7.0       | ^8.0    |
-| ^5.0                        | ^6.0\|^7.0 | ^7.0    |
-| ^4.3                        | ^6.0\|^7.0 | ^7.0    |
-| ~4.1                        | ~6.0       | ~7.0    |
-| ~4.0                        | ~6.0       | ~6.0    |
-| ~3.0                        | ~6.0       | ~5.5    |
-| ~2.0                        | ~6.0       | ~5.0    |
-| ~1.0                        | ~5.0       | ~5.0    |
+| Viva Payments for Laravel | Guzzle     | Laravel |
+| ------------------------- | ---------- | ------- |
+| ^6.0                      | ^7.0       | ^9.0    |
+| ^5.2                      | ^7.0       | ^9.0    |
+| ^5.1                      | ^7.0       | ^8.0    |
+| ^5.0                      | ^6.0\|^7.0 | ^7.0    |
+| ^4.3                      | ^6.0\|^7.0 | ^7.0    |
+| ~4.1                      | ~6.0       | ~7.0    |
+| ~4.0                      | ~6.0       | ~6.0    |
+| ~3.0                      | ~6.0       | ~5.5    |
+| ~2.0                      | ~6.0       | ~5.0    |
+| ~1.0                      | ~5.0       | ~5.0    |
 
 ```
 composer require sebdesign/laravel-viva-payments
@@ -59,9 +59,9 @@ Add the following array in your `config/services.php`.
 ],
 ```
 
-The `api_key` and `merchant_id` can be found in the *Settings > API Access* section of your profile.
+The `api_key` and `merchant_id` can be found in the _Settings > API Access_ section of your profile.
 
-The `client_id` and `client_secret` are needed for the *Smart Checkout*. You can generate the *Smart Checkout Credentials* in the *Settings > API Access* section of your profile.
+The `client_id` and `client_secret` are needed for the _Smart Checkout_. You can generate the _Smart Checkout Credentials_ in the _Settings > API Access_ section of your profile.
 
 The `isv_partner_id` and `isv_partner_api_key` are required for using the **ISV Payment API** with Basic authentication.
 
@@ -254,7 +254,7 @@ The `EventData` property contains an object with the actual notification.
 The class of the object depends on the notification type:
 
 | Event                       | Class                       |
-|-----------------------------|-----------------------------|
+| --------------------------- | --------------------------- |
 | Transaction Payment Created | `TransactionPaymentCreated` |
 | Transaction Failed          | `TransactionFailed`         |
 | All other events            | `stdClass`                  |
