@@ -11,7 +11,7 @@ class TransactionPaymentCreated
     public function __construct(
         public readonly bool $Moto,
         public readonly string $Email,
-        public readonly string $Phone,
+        public readonly ?string $Phone,
         public readonly string $BankId,
         public readonly bool $Systemic,
         public readonly bool $Switching,
@@ -35,9 +35,9 @@ class TransactionPaymentCreated
         public readonly string $SourceName,
         public readonly ?float $Latitude,
         public readonly ?float $Longitude,
-        public readonly string $CompanyName,
+        public readonly ?string $CompanyName,
         public readonly string $TransactionId,
-        public readonly string $CompanyTitle,
+        public readonly ?string $CompanyTitle,
         public readonly string $PanEntryMode,
         public readonly int $ReferenceNumber,
         public readonly ?string $ResponseCode,
@@ -79,6 +79,7 @@ class TransactionPaymentCreated
         public readonly ?string $AcquirerApproved,
         public readonly ?string $AuthorizationId,
         public readonly ?string $OrderServiceId,
+        public readonly ?string $ConnectedAccountId,
     ) {
     }
 
