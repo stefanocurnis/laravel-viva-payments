@@ -27,7 +27,7 @@ class TransactionPaymentCreated
         public readonly ?string $ResellerId,
         public readonly string $InsDate,
         public readonly float $TotalFee,
-        public readonly string $CardUniqueReference,
+        public readonly ?string $CardUniqueReference,
         public readonly string $CardToken,
         public readonly string $CardNumber,
         public readonly float $TipAmount,
