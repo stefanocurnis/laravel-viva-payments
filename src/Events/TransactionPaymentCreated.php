@@ -81,6 +81,7 @@ class TransactionPaymentCreated
         public readonly ?string $OrderServiceId,
         public readonly ?string $ConnectedAccountId,
         public readonly ?string $MerchantCategoryCode,
+        public readonly ?string $ServiceId,
     ) {
     }
 
