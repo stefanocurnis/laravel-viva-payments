@@ -42,6 +42,8 @@ class TransactionTest extends TestCase
             'currentInstallment' => 0,
             'cardUniqueReference' => '9521B4209B611B11E080964E09640F4EB3C3AA18',
             'cardTypeId' => 1,
+            'bankId' => 'NET_VISA',
+            'switching' => false,
         ]);
         $this->mockRequests();
 
@@ -70,6 +72,8 @@ class TransactionTest extends TestCase
         $this->assertEquals(null, $transaction->cardIssuingBank);
         $this->assertEquals(0, $transaction->currentInstallment);
         $this->assertEquals(1, $transaction->cardTypeId);
+        $this->assertEquals('NET_VISA', $transaction->bankId);
+        $this->assertFalse($transaction->switching);
     }
 
     /**

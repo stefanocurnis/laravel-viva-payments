@@ -74,7 +74,8 @@
         "OrderServiceId": null,
         "ConnectedAccountId": null,
         "MerchantCategoryCode": null,
-        "ServiceId": null
+        "ServiceId": null,
+        "ExternalTransactionId": null
     },
     "Created": "2021-09-02T07:39:28.8496795Z",
     "CorrelationId": "21-245-DB33F8C9",
