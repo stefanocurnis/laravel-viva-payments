@@ -83,6 +83,7 @@ class TransactionPaymentCreated
         public readonly ?string $MerchantCategoryCode,
         public readonly ?string $ServiceId,
         public readonly ?string $ExternalTransactionId,
+        public readonly ?string $ApplicationIdentifierTerminal,
     ) {
     }
 
