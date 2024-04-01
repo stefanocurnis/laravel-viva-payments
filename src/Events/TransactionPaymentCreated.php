@@ -84,6 +84,7 @@ class TransactionPaymentCreated
         public readonly ?string $ServiceId,
         public readonly ?string $ExternalTransactionId,
         public readonly ?string $ApplicationIdentifierTerminal,
+        public readonly ?string $Descriptor,
     ) {
     }
 
