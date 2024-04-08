@@ -85,6 +85,7 @@ class TransactionPaymentCreated
         public readonly ?string $ExternalTransactionId,
         public readonly ?string $ApplicationIdentifierTerminal,
         public readonly ?string $Descriptor,
+        public readonly ?float $ConversionRate,
     ) {
     }
 
