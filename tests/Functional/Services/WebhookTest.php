@@ -12,6 +12,7 @@ class WebhookTest extends TestCase
 {
     /**
      * @test
+     *
      * @group functional
      *
      * @throws GuzzleException

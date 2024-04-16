@@ -12,6 +12,7 @@ class ServiceProviderTest extends TestCase
 {
     /**
      * @test
+     *
      * @group unit
      */
     public function it_is_deferred(): void
@@ -24,6 +25,7 @@ class ServiceProviderTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
      */
     public function it_merges_the_configuration(): void
@@ -41,6 +43,7 @@ class ServiceProviderTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
      */
     public function it_provides_the_client(): void
@@ -53,6 +56,7 @@ class ServiceProviderTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
      */
     public function it_resolves_the_client_as_a_singleton(): void
@@ -65,6 +69,7 @@ class ServiceProviderTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
      */
     public function it_resolves_the_oauth(): void

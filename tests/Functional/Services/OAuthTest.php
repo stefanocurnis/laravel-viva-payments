@@ -12,8 +12,11 @@ class OAuthTest extends TestCase
 {
     /**
      * @test
+     *
      * @group functional
+     *
      * @doesNotPerformAssertions
+     *
      * @covers \Sebdesign\VivaPayments\Responses\AccessToken
      *
      * @throws GuzzleException
@@ -26,8 +29,11 @@ class OAuthTest extends TestCase
 
     /**
      * @test
+     *
      * @group functional
+     *
      * @doesNotPerformAssertions
+     *
      * @covers \Sebdesign\VivaPayments\Responses\AccessToken
      *
      * @throws GuzzleException

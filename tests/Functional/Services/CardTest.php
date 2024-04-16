@@ -13,6 +13,7 @@ class CardTest extends TestCase
 {
     /**
      * @test
+     *
      * @group functional
      *
      * @throws GuzzleException

@@ -18,6 +18,7 @@ class TransactionTest extends TestCase
 {
     /**
      * @test
+     *
      * @group functional
      *
      * @throws GuzzleException
@@ -40,7 +41,9 @@ class TransactionTest extends TestCase
 
     /**
      * @test
+     *
      * @group functional
+     *
      * @covers \Sebdesign\VivaPayments\Requests\CreateRecurringTransaction
      *
      * @throws GuzzleException

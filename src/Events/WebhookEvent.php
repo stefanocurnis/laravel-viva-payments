@@ -25,6 +25,7 @@ class WebhookEvent
 
     /**
      * @phpstan-param  WebhookEventArray  $attributes
+     *
      * @phpstan-return self<TEventData>
      */
     public static function create(array $attributes): self

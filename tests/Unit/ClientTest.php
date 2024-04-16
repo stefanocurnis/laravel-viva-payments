@@ -14,6 +14,7 @@ class ClientTest extends TestCase
 {
     /**
      * @test
+     *
      * @group unit
      */
     public function it_gets_the_demo_url(): void
@@ -28,6 +29,7 @@ class ClientTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
      */
     public function it_gets_the_production_url(): void
@@ -42,6 +44,7 @@ class ClientTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
      */
     public function it_gets_the_demo_accounts_url(): void
@@ -56,6 +59,7 @@ class ClientTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
      */
     public function it_gets_the_production_accounts_url(): void
@@ -70,6 +74,7 @@ class ClientTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
      */
     public function it_gets_the_demo_api_url(): void
@@ -84,6 +89,7 @@ class ClientTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
      */
     public function it_gets_the_production_api_url(): void
@@ -98,6 +104,7 @@ class ClientTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
      */
     public function it_authenticates_with_basic_auth(): void
@@ -113,6 +120,7 @@ class ClientTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
      */
     public function it_sets_the_basic_auth_credentials(): void
@@ -129,6 +137,7 @@ class ClientTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
      *
      * @throws GuzzleException
@@ -148,6 +157,7 @@ class ClientTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
      *
      * @throws GuzzleException
@@ -174,7 +184,9 @@ class ClientTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
+     *
      * @covers \Sebdesign\VivaPayments\VivaException
      *
      * @throws GuzzleException
@@ -192,7 +204,9 @@ class ClientTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
+     *
      * @covers \Sebdesign\VivaPayments\VivaException
      *
      * @throws GuzzleException
@@ -210,6 +224,7 @@ class ClientTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
      *
      * @throws \JsonException
@@ -234,7 +249,9 @@ class ClientTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
+     *
      * @covers \Sebdesign\VivaPayments\VivaException
      *
      * @throws GuzzleException
@@ -254,6 +271,7 @@ class ClientTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
      *
      * @throws GuzzleException
@@ -278,6 +296,7 @@ class ClientTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
      *
      * @throws GuzzleException

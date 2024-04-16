@@ -18,7 +18,9 @@ class OrderTest extends TestCase
 {
     /**
      * @test
+     *
      * @group unit
+     *
      * @covers \Sebdesign\VivaPayments\Requests\CreatePaymentOrder
      * @covers \Sebdesign\VivaPayments\Requests\Customer
      *
@@ -101,6 +103,7 @@ class OrderTest extends TestCase
 
     /**
      * @test
+     *
      * @group unit
      */
     public function it_gets_a_redirect_url(): void
