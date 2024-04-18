@@ -33,7 +33,6 @@ class Webhook
             )
         );
 
-        /** @phpstan-ignore-next-line */
-        return new Responses\WebhookVerificationKey(...$response);
+        return Responses\WebhookVerificationKey::from($response);
     }
 }

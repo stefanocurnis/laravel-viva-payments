@@ -37,7 +37,7 @@ class Transaction
             )
         );
 
-        return Responses\Transaction::create($response);
+        return Responses\Transaction::from($response);
     }
 
     /**
@@ -65,6 +65,6 @@ class Transaction
             )
         );
 
-        return Responses\RecurringTransaction::create($response);
+        return Responses\RecurringTransaction::from($response);
     }
 }

@@ -4,8 +4,9 @@ namespace Sebdesign\VivaPayments\Responses;
 
 use Sebdesign\VivaPayments\Enums\TransactionStatus;
 use Sebdesign\VivaPayments\Enums\TransactionType;
+use Spatie\LaravelData\Data;
 
-class Transaction
+class Transaction extends Data
 {
     public function __construct(
         public readonly string $email,
@@ -30,15 +31,5 @@ class Transaction
         public readonly int $cardTypeId,
         public readonly ?int $digitalWalletId = null,
     ) {
-    }
-
-    /** @phpstan-param  TransactionArray  $attributes */
-    public static function create(array $attributes): self
-    {
-        return new self(...[
-            ...$attributes,
-            'statusId' => TransactionStatus::from($attributes['statusId']),
-            'transactionTypeId' => TransactionType::from($attributes['transactionTypeId']),
-        ]);
     }
 }

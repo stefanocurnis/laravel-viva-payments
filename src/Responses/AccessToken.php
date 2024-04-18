@@ -2,7 +2,9 @@
 
 namespace Sebdesign\VivaPayments\Responses;
 
-class AccessToken
+use Spatie\LaravelData\Data;
+
+class AccessToken extends Data
 {
     public function __construct(
         public readonly string $access_token,

@@ -12,6 +12,7 @@ use Psr\Http\Message\ResponseInterface;
 use Sebdesign\VivaPayments\Client;
 use Sebdesign\VivaPayments\Enums\Environment;
 use Sebdesign\VivaPayments\VivaPaymentsServiceProvider;
+use Spatie\LaravelData\LaravelDataServiceProvider;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {
@@ -36,7 +37,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
      */
     protected function getPackageProviders($app)
     {
-        return [VivaPaymentsServiceProvider::class];
+        return [LaravelDataServiceProvider::class, VivaPaymentsServiceProvider::class];
     }
 
     protected function mockRequests(): void

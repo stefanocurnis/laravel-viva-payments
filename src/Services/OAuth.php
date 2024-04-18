@@ -46,7 +46,6 @@ class OAuth
             ]
         );
 
-        /** @phpstan-ignore-next-line */
-        return new AccessToken(...$response);
+        return AccessToken::from($response);
     }
 }

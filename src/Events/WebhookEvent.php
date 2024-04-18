@@ -33,10 +33,8 @@ class WebhookEvent
         $eventType = WebhookEventType::from($attributes['EventTypeId']);
 
         $eventData = match ($eventType) {
-            /** @phpstan-ignore-next-line */
-            WebhookEventType::TransactionPaymentCreated => TransactionPaymentCreated::create($attributes['EventData']),
-            /** @phpstan-ignore-next-line */
-            WebhookEventType::TransactionFailed => TransactionFailed::create($attributes['EventData']),
+            WebhookEventType::TransactionPaymentCreated => TransactionPaymentCreated::from($attributes['EventData']),
+            WebhookEventType::TransactionFailed => TransactionFailed::from($attributes['EventData']),
             default => (object) $attributes['EventData'],
         };
 

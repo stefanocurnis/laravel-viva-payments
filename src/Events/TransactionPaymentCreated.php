@@ -4,9 +4,10 @@ namespace Sebdesign\VivaPayments\Events;
 
 use Sebdesign\VivaPayments\Enums\TransactionStatus;
 use Sebdesign\VivaPayments\Enums\TransactionType;
+use Spatie\LaravelData\Data;
 
 /** @see https://developer.vivawallet.com/webhooks-for-payments/transaction-payment-created/ */
-class TransactionPaymentCreated
+class TransactionPaymentCreated extends Data
 {
     public function __construct(
         public readonly bool $Moto,
@@ -87,15 +88,5 @@ class TransactionPaymentCreated
         public readonly ?string $Descriptor,
         public readonly ?float $ConversionRate,
     ) {
-    }
-
-    /** @phpstan-param  TransactionPaymentCreatedArray  $attributes */
-    public static function create(array $attributes): self
-    {
-        return new self(...[
-            ...$attributes,
-            'StatusId' => TransactionStatus::from($attributes['StatusId']),
-            'TransactionTypeId' => TransactionType::from($attributes['TransactionTypeId']),
-        ]);
     }
 }

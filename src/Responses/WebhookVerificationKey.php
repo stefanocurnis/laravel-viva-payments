@@ -2,7 +2,9 @@
 
 namespace Sebdesign\VivaPayments\Responses;
 
-class WebhookVerificationKey
+use Spatie\LaravelData\Data;
+
+class WebhookVerificationKey extends Data
 {
     public function __construct(public readonly string $Key)
     {

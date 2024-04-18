@@ -4,8 +4,9 @@ namespace Sebdesign\VivaPayments\Responses;
 
 use Sebdesign\VivaPayments\Enums\TransactionStatus;
 use Sebdesign\VivaPayments\Enums\TransactionType;
+use Spatie\LaravelData\Data;
 
-class RecurringTransaction
+class RecurringTransaction extends Data
 {
     public function __construct(
         public readonly ?string $Emv,
@@ -33,15 +34,5 @@ class RecurringTransaction
         public readonly mixed $ApplePosInfo = null,
         public readonly mixed $ServiceId = null,
     ) {
-    }
-
-    /** @phpstan-param  RecurringTransactionArray  $attributes */
-    public static function create(array $attributes): self
-    {
-        return new self(...[
-            ...$attributes,
-            'StatusId' => TransactionStatus::from($attributes['StatusId']),
-            'TransactionTypeId' => TransactionType::from($attributes['TransactionTypeId']),
-        ]);
     }
 }

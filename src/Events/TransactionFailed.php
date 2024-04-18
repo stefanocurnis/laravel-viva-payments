@@ -4,9 +4,10 @@ namespace Sebdesign\VivaPayments\Events;
 
 use Sebdesign\VivaPayments\Enums\TransactionStatus;
 use Sebdesign\VivaPayments\Enums\TransactionType;
+use Spatie\LaravelData\Data;
 
 /** @see https://developer.vivawallet.com/webhooks-for-payments/transaction-failed/ */
-class TransactionFailed
+class TransactionFailed extends Data
 {
     public function __construct(
         public readonly bool $Moto,
@@ -74,73 +75,5 @@ class TransactionFailed
         public readonly ?string $ResponseEventId,
         public readonly ?string $ElectronicCommerceIndicator,
     ) {
-    }
-
-    /** @phpstan-param  TransactionFailedArray  $attributes */
-    public static function create(array $attributes): self
-    {
-        return new self(
-            Moto: $attributes['Moto'],
-            Email: $attributes['Email'],
-            Phone: $attributes['Phone'] ?? null,
-            BankId: $attributes['BankId'],
-            Systemic: $attributes['Systemic'],
-            Switching: $attributes['Switching'],
-            ParentId: $attributes['ParentId'] ?? null,
-            Amount: $attributes['Amount'],
-            ChannelId: $attributes['ChannelId'],
-            TerminalId: $attributes['TerminalId'],
-            MerchantId: $attributes['MerchantId'],
-            OrderCode: $attributes['OrderCode'],
-            ProductId: $attributes['ProductId'] ?? null,
-            StatusId: TransactionStatus::from($attributes['StatusId']),
-            FullName: $attributes['FullName'],
-            ResellerId: $attributes['ResellerId'] ?? null,
-            InsDate: $attributes['InsDate'],
-            TotalFee: $attributes['TotalFee'],
-            CardUniqueReference: $attributes['CardUniqueReference'] ?? null,
-            CardToken: $attributes['CardToken'],
-            CardNumber: $attributes['CardNumber'],
-            TipAmount: $attributes['TipAmount'],
-            SourceCode: $attributes['SourceCode'],
-            SourceName: $attributes['SourceName'],
-            Latitude: $attributes['Latitude'] ?? null,
-            Longitude: $attributes['Longitude'] ?? null,
-            CompanyName: $attributes['CompanyName'] ?? null,
-            TransactionId: $attributes['TransactionId'],
-            CompanyTitle: $attributes['CompanyTitle'] ?? null,
-            PanEntryMode: $attributes['PanEntryMode'],
-            ReferenceNumber: $attributes['ReferenceNumber'],
-            ResponseCode: $attributes['ResponseCode'] ?? null,
-            CurrencyCode: $attributes['CurrencyCode'],
-            OrderCulture: $attributes['OrderCulture'],
-            MerchantTrns: $attributes['MerchantTrns'] ?? null,
-            CustomerTrns: $attributes['CustomerTrns'],
-            IsManualRefund: $attributes['IsManualRefund'],
-            TargetPersonId: $attributes['TargetPersonId'] ?? null,
-            TargetWalletId: $attributes['TargetWalletId'] ?? null,
-            LoyaltyTriggered: $attributes['LoyaltyTriggered'],
-            TransactionTypeId: TransactionType::from($attributes['TransactionTypeId']),
-            TotalInstallments: $attributes['TotalInstallments'],
-            CardCountryCode: $attributes['CardCountryCode'] ?? null,
-            CardIssuingBank: $attributes['CardIssuingBank'] ?? null,
-            RedeemedAmount: $attributes['RedeemedAmount'],
-            ClearanceDate: $attributes['ClearanceDate'] ?? null,
-            CurrentInstallment: $attributes['CurrentInstallment'] ?? null,
-            Tags: $attributes['Tags'],
-            BillId: $attributes['BillId'] ?? null,
-            ResellerSourceCode: $attributes['ResellerSourceCode'] ?? null,
-            ResellerSourceName: $attributes['ResellerSourceName'] ?? null,
-            ResellerCompanyName: $attributes['ResellerCompanyName'] ?? null,
-            ResellerSourceAddress: $attributes['ResellerSourceAddress'] ?? null,
-            CardExpirationDate: $attributes['CardExpirationDate'],
-            RetrievalReferenceNumber: $attributes['RetrievalReferenceNumber'] ?? null,
-            AssignedMerchantUsers: $attributes['AssignedMerchantUsers'],
-            AssignedResellerUsers: $attributes['AssignedResellerUsers'],
-            CardTypeId: $attributes['CardTypeId'],
-            DigitalWalletId: $attributes['DigitalWalletId'] ?? null,
-            ResponseEventId: $attributes['ResponseEventId'] ?? null,
-            ElectronicCommerceIndicator: $attributes['ElectronicCommerceIndicator'] ?? null,
-        );
     }
 }
