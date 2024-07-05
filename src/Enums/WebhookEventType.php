@@ -1,8 +1,8 @@
 <?php
 
-/** @see https://developer.viva.com/webhooks-for-payments/#webhook-events */
 namespace Sebdesign\VivaPayments\Enums;
 
+/** @see https://developer.viva.com/webhooks-for-payments/#webhook-events */
 enum WebhookEventType: int
 {
     /** A customer’s payment has been successful */
