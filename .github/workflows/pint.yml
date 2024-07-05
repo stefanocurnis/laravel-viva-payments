@@ -7,10 +7,10 @@ on:
 
 jobs:
   ci:
+    name: Pint
     runs-on: ubuntu-latest
 
     strategy:
-      name: Pint
       fail-fast: true
 
     steps:
