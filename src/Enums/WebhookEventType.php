@@ -1,5 +1,6 @@
 <?php
 
+/** @see https://developer.viva.com/webhooks-for-payments/#webhook-events */
 namespace Sebdesign\VivaPayments\Enums;
 
 enum WebhookEventType: int
@@ -30,10 +31,27 @@ enum WebhookEventType: int
      */
     case CommandBankTransferExecuted = 769;
 
-    /** A marketplace obligation (e.g. refund request) has been successfully sent to a marketplace seller */
+    /** Marketplace & ISV only: triggered when an account is successfully connected to the platform/ISV account */
+    case AccountConnected = 8193;
+
+    /** Marketplace & ISV only: triggered when the verification status of a connected account changes */
+    case AccountVerificationStatusChanged = 8194;
+
+    /** Marketplace only: triggered when a transfer is made */
+    case TransferCreated = 8448;
+
+    /**
+     * A marketplace obligation (e.g. refund request) has been successfully sent to a marketplace seller
+     *
+     * @deprecated
+     */
     case ObligationCreated = 5632;
 
-    /** A marketplace obligation (e.g. refund request) has been successfully paid by a marketplace seller */
+    /**
+     * A marketplace obligation (e.g. refund request) has been successfully paid by a marketplace seller
+     *
+     * @deprecated
+     */
     case ObligationCaptured = 5633;
 
     /** The requested sale transactions are available to download */
