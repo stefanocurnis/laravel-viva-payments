@@ -7,10 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [6.1.1] - 2024-07-05
 
+### Added
+
+-   Add `currencyCode` to `CreatePaymentOrder`
+
 ### Changed
 
 -   Update webhooks events
--   Add `currencyCode` to `CreatePaymentOrder`
 
 ## [6.1.0] - 2024-04-18
 
