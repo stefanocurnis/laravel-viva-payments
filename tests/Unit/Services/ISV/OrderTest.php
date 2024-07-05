@@ -46,6 +46,7 @@ class OrderTest extends TestCase
                 requestLang: 'en-GB',
             ),
             paymentTimeOut: 300,
+            currencyCode: '978',
             preauth: false,
             allowRecurring: false,
             maxInstallments: 12,
@@ -81,6 +82,7 @@ class OrderTest extends TestCase
             'requestLang' => 'en-GB',
         ], $request);
         $this->assertJsonBody('paymentTimeOut', 300, $request);
+        $this->assertJsonBody('currencyCode', '978', $request);
         $this->assertJsonBody('preauth', false, $request);
         $this->assertJsonBody('allowRecurring', false, $request);
         $this->assertJsonBody('maxInstallments', 12, $request);

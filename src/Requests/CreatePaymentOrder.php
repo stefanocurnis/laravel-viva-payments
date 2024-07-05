@@ -11,6 +11,7 @@ class CreatePaymentOrder
         public ?Customer $customer = null,
         /** @var int<0,432000> */
         public int $paymentTimeOut = 1800,
+        public ?string $currencyCode = null,
         public bool $preauth = false,
         public bool $allowRecurring = false,
         /** @var int<0,36> */
