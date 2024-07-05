@@ -9,9 +9,7 @@ use Sebdesign\VivaPayments\VivaException;
 
 class Webhook
 {
-    public function __construct(protected Client $client)
-    {
-    }
+    public function __construct(protected Client $client) {}
 
     /**
      * Get a webhook authorization code.

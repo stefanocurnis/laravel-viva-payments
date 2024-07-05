@@ -74,6 +74,5 @@ class TransactionFailed extends Data
         public readonly ?int $DigitalWalletId,
         public readonly ?string $ResponseEventId,
         public readonly ?string $ElectronicCommerceIndicator,
-    ) {
-    }
+    ) {}
 }

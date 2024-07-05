@@ -12,9 +12,7 @@ use Sebdesign\VivaPayments\VivaException;
 
 class Order
 {
-    public function __construct(protected Client $client)
-    {
-    }
+    public function __construct(protected Client $client) {}
 
     /**
      * Create payment order.

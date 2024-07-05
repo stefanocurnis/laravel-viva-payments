@@ -6,7 +6,5 @@ use Spatie\LaravelData\Data;
 
 class WebhookVerificationKey extends Data
 {
-    public function __construct(public readonly string $Key)
-    {
-    }
+    public function __construct(public readonly string $Key) {}
 }

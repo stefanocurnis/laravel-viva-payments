@@ -17,6 +17,5 @@ class CreateRecurringTransaction
         public ?string $resellerSourceCode = null,
         /** @var int<0,max> */
         public int $tipAmount = 0,
-    ) {
-    }
+    ) {}
 }

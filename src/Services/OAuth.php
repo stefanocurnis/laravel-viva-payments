@@ -14,8 +14,7 @@ class OAuth
         public readonly Client $client,
         public readonly string $clientId,
         public readonly string $clientSecret,
-    ) {
-    }
+    ) {}
 
     /**
      * Request access token.

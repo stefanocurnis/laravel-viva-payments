@@ -30,6 +30,5 @@ class CreatePaymentOrder
         /** @var string[]|null */
         public ?array $cardTokens = null,
         public ?string $resellerSourceCode = null,
-    ) {
-    }
+    ) {}
 }

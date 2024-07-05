@@ -52,8 +52,7 @@ class Client
         protected string $apiKey,
         protected string $clientId,
         protected string $clientSecret,
-    ) {
-    }
+    ) {}
 
     /**
      * Request OAuth access tokens.

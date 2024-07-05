@@ -10,6 +10,5 @@ class Customer
         public ?string $phone = null,
         public ?string $countryCode = null,
         public ?string $requestLang = null,
-    ) {
-    }
+    ) {}
 }

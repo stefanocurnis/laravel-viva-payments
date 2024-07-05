@@ -9,9 +9,7 @@ use Sebdesign\VivaPayments\VivaException;
 
 class Card
 {
-    public function __construct(protected Client $client)
-    {
-    }
+    public function __construct(protected Client $client) {}
 
     /**
      * Create card token.

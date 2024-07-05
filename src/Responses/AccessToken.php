@@ -11,6 +11,5 @@ class AccessToken extends Data
         public readonly int $expires_in,
         public readonly string $token_type,
         public readonly string $scope,
-    ) {
-    }
+    ) {}
 }

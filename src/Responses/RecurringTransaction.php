@@ -33,6 +33,5 @@ class RecurringTransaction extends Data
         public readonly ?string $CartesBancaires = null,
         public readonly mixed $ApplePosInfo = null,
         public readonly mixed $ServiceId = null,
-    ) {
-    }
+    ) {}
 }

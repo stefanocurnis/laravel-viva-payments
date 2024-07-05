@@ -87,6 +87,5 @@ class TransactionPaymentCreated extends Data
         public readonly ?string $ApplicationIdentifierTerminal,
         public readonly ?string $Descriptor,
         public readonly ?float $ConversionRate,
-    ) {
-    }
+    ) {}
 }

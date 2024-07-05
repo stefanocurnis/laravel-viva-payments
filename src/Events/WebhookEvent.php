@@ -20,8 +20,7 @@ class WebhookEvent
         public readonly string $MessageId,
         public readonly string $RecipientId,
         public readonly int $MessageTypeId,
-    ) {
-    }
+    ) {}
 
     /**
      * @phpstan-param  WebhookEventArray  $attributes

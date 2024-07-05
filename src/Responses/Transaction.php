@@ -30,6 +30,5 @@ class Transaction extends Data
         public readonly ?string $cardUniqueReference,
         public readonly int $cardTypeId,
         public readonly ?int $digitalWalletId = null,
-    ) {
-    }
+    ) {}
 }
