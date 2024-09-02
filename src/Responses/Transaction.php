@@ -17,7 +17,7 @@ class Transaction extends Data
         public readonly TransactionStatus $statusId,
         public readonly string $fullName,
         public readonly string $insDate,
-        public readonly string $cardNumber,
+        public readonly ?string $cardNumber,
         public readonly string $currencyCode,
         public readonly string $customerTrns,
         public readonly ?string $merchantTrns,
@@ -28,7 +28,7 @@ class Transaction extends Data
         public readonly ?string $cardIssuingBank,
         public readonly int $currentInstallment,
         public readonly ?string $cardUniqueReference,
-        public readonly int $cardTypeId,
+        public readonly ?int $cardTypeId,
         public readonly ?int $digitalWalletId = null,
     ) {}
 }
