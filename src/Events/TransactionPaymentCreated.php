@@ -19,7 +19,7 @@ class TransactionPaymentCreated extends Data
         public readonly ?string $ParentId,
         public readonly float $Amount,
         public readonly string $ChannelId,
-        public readonly int $TerminalId,
+        public readonly ?int $TerminalId,
         public readonly string $MerchantId,
         public readonly string $OrderCode,
         public readonly ?string $ProductId,
