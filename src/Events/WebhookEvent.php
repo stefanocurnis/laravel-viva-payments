@@ -17,6 +17,8 @@ class WebhookEvent
         public readonly string $CorrelationId,
         public readonly WebhookEventType $EventTypeId,
         public readonly ?string $Delay,
+        public readonly int $RetryCount,
+        public readonly ?string $RetryDelay,
         public readonly string $MessageId,
         public readonly string $RecipientId,
         public readonly int $MessageTypeId,
