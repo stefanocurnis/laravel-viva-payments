@@ -9,6 +9,7 @@ use Sebdesign\VivaPayments\VivaException;
 
 /**
  * @covers \Sebdesign\VivaPayments\Client
+ * @covers \Sebdesign\VivaPayments\Services\ISV
  * @covers \Sebdesign\VivaPayments\Services\ISV\Transaction
  */
 class TransactionTest extends TestCase

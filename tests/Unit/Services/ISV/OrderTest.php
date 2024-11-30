@@ -5,12 +5,12 @@ namespace Sebdesign\VivaPayments\Test\Unit\Services\ISV;
 use GuzzleHttp\Exception\GuzzleException;
 use Sebdesign\VivaPayments\Requests\CreatePaymentOrder;
 use Sebdesign\VivaPayments\Requests\Customer;
-use Sebdesign\VivaPayments\Services\ISV\Order;
 use Sebdesign\VivaPayments\Test\TestCase;
 use Sebdesign\VivaPayments\VivaException;
 
 /**
  * @covers \Sebdesign\VivaPayments\Client
+ * @covers \Sebdesign\VivaPayments\Services\ISV
  * @covers \Sebdesign\VivaPayments\Services\ISV\Order
  */
 class OrderTest extends TestCase
@@ -29,9 +29,7 @@ class OrderTest extends TestCase
         $this->mockJsonResponses(['orderCode' => '1272214778972604']);
         $this->mockRequests();
 
-        $this->client->withToken('test');
-
-        $order = new Order($this->client);
+        $order = $this->client->withToken('test')->isv()->orders();
 
         $orderCode = $order->create(new CreatePaymentOrder(
             amount: 1000,
