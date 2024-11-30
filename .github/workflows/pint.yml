@@ -6,8 +6,8 @@ on:
       - "**.php"
 
 jobs:
-  ci:
-    name: Pint
+  pint:
+    name: pint
     runs-on: ubuntu-latest
 
     strategy:
@@ -17,13 +17,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: "ubuntu-latest"
-
-      - name: Install Composer dependencies
-        uses: ramsey/composer-install@v3
-
       - name: Run Laravel Pint
-        run: ./vendor/bin/pint --test -v
+        uses: aglipanci/laravel-pint-action@latest
+        with:
+          preset: laravel
+          verboseMode: true
+          testMode: true
