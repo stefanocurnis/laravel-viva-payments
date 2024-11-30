@@ -15,8 +15,6 @@ class WebhookTest extends TestCase
     /**
      * @test
      *
-     * @group unit
-     *
      * @covers \Sebdesign\VivaPayments\Responses\WebhookVerificationKey
      *
      * @throws GuzzleException

@@ -18,8 +18,6 @@ class OrderTest extends TestCase
     /**
      * @test
      *
-     * @group unit
-     *
      * @covers \Sebdesign\VivaPayments\Requests\CreatePaymentOrder
      * @covers \Sebdesign\VivaPayments\Requests\Customer
      *

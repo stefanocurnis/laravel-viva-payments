@@ -15,8 +15,6 @@ class CardTest extends TestCase
     /**
      * @test
      *
-     * @group unit
-     *
      * @throws GuzzleException
      * @throws VivaException
      */

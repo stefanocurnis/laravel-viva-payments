@@ -15,8 +15,6 @@ class OAuthTest extends TestCase
     /**
      * @test
      *
-     * @group unit
-     *
      * @covers \Sebdesign\VivaPayments\Responses\AccessToken
      *
      * @throws GuzzleException
@@ -48,8 +46,6 @@ class OAuthTest extends TestCase
 
     /**
      * @test
-     *
-     * @group unit
      *
      * @covers \Sebdesign\VivaPayments\Responses\AccessToken
      *

@@ -16,8 +16,6 @@ class TransactionTest extends TestCase
     /**
      * @test
      *
-     * @group unit
-     *
      * @covers \Sebdesign\VivaPayments\Responses\Transaction
      *
      * @throws GuzzleException
@@ -80,8 +78,6 @@ class TransactionTest extends TestCase
 
     /**
      * @test
-     *
-     * @group unit
      *
      * @covers \Sebdesign\VivaPayments\Requests\CreateRecurringTransaction
      * @covers \Sebdesign\VivaPayments\Responses\RecurringTransaction

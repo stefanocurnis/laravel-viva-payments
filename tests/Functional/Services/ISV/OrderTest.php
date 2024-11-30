@@ -19,8 +19,6 @@ class OrderTest extends TestCase
     /**
      * @test
      *
-     * @group functional
-     *
      * @covers \Sebdesign\VivaPayments\Requests\CreatePaymentOrder
      *
      * @throws GuzzleException

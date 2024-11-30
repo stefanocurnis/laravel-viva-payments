@@ -11,8 +11,6 @@ class VivaTest extends TestCase
 {
     /**
      * @test
-     *
-     * @group unit
      */
     public function it_proxies_the_client(): void
     {

@@ -19,8 +19,6 @@ class WebhookControllerTest extends TestCase
     /**
      * @test
      *
-     * @group unit
-     *
      * @throws GuzzleException
      * @throws VivaException
      */
@@ -40,8 +38,6 @@ class WebhookControllerTest extends TestCase
 
     /**
      * @test
-     *
-     * @group unit
      *
      * @covers \Sebdesign\VivaPayments\Events\WebhookEvent
      */
@@ -65,8 +61,6 @@ class WebhookControllerTest extends TestCase
     /**
      * @test
      *
-     * @group unit
-     *
      * @covers \Sebdesign\VivaPayments\Events\TransactionPaymentCreated
      */
     public function it_handles_a_create_transaction_notification_event(): void
@@ -89,8 +83,6 @@ class WebhookControllerTest extends TestCase
 
     /**
      * @test
-     *
-     * @group unit
      *
      * @covers \Sebdesign\VivaPayments\Events\TransactionFailed
      */

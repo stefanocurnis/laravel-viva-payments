@@ -19,8 +19,11 @@
     verbose="true"
 >
     <testsuites>
-        <testsuite name="Laravel Viva Payments Test Suite">
-            <directory>tests</directory>
+        <testsuite name="Functional">
+            <directory>./tests/Functional</directory>
+        </testsuite>
+        <testsuite name="Unit">
+            <directory>./tests/Unit</directory>
         </testsuite>
     </testsuites>
     <coverage>
