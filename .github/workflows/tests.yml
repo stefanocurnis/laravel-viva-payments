@@ -17,7 +17,6 @@ jobs:
       matrix:
         os: [ubuntu-latest]
         php: [8.4, 8.3, 8.2, 8.1]
-        stability: [prefer-lowest, prefer-stable]
         laravel: [11.*, 10.*, 9.*]
         include:
           - laravel: 11.*
@@ -36,7 +35,7 @@ jobs:
           - laravel: 9.*
             php: 8.3
 
-    name: Tests P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.os }} - ${{ matrix.stability }}
+    name: Tests P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.os }}
 
     steps:
       - name: Checkout
@@ -53,9 +52,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ${{ steps.composer-cache.outputs.dir }}
-          key: ${{ matrix.os }}-${{ matrix.php }}-${{ matrix.stability }}-composer-${{ hashFiles('**/composer.lock') }}
+          key: ${{ matrix.os }}-${{ matrix.php }}-composer-${{ hashFiles('**/composer.lock') }}
           restore-keys: |
-            ${{ matrix.os }}-${{ matrix.php }}-${{ matrix.stability }}-composer-
+            ${{ matrix.os }}-${{ matrix.php }}-composer-
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -73,7 +72,7 @@ jobs:
       - name: Install Composer dependencies
         run: |
           composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
-          composer update --${{ matrix.stability }} --no-interaction --prefer-dist
+          composer update --prefer-stable --no-interaction --prefer-dist
 
       - name: Execute tests
         env:
