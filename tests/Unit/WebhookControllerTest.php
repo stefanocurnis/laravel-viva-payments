@@ -28,7 +28,7 @@ class WebhookControllerTest extends TestCase
 
         $webhook = new Webhook($this->client);
 
-        $controller = new WebhookController();
+        $controller = new WebhookController;
 
         $response = $controller->verify($webhook);
 
@@ -45,7 +45,7 @@ class WebhookControllerTest extends TestCase
     {
         Event::fake();
 
-        $controller = new WebhookController();
+        $controller = new WebhookController;
 
         $event = strval(file_get_contents(__DIR__.'/../Stubs/transaction-price-calculated.json'));
 
@@ -67,7 +67,7 @@ class WebhookControllerTest extends TestCase
     {
         Event::fake();
 
-        $controller = new WebhookController();
+        $controller = new WebhookController;
 
         $event = strval(file_get_contents(__DIR__.'/../Stubs/transaction-payment-created.json'));
 
@@ -90,7 +90,7 @@ class WebhookControllerTest extends TestCase
     {
         Event::fake();
 
-        $controller = new WebhookController();
+        $controller = new WebhookController;
 
         $event = strval(file_get_contents(__DIR__.'/../Stubs/transaction-failed.json'));
 
