@@ -31,7 +31,6 @@ enum TransactionType: int
     case PayUCharge = 29;
     case PayURefund = 30;
     case CardWithdrawal = 31;
-    case MultibancoCharge = 32;
     case GiropayCharge = 34;
     case GiropayRefund = 35;
     case SofortCharge = 36;
@@ -49,12 +48,28 @@ enum TransactionType: int
     case TrustlyRefund = 51;
     case KlarnaCharge = 52;
     case KlarnaRefund = 53;
+    case MbWayCharge = 54;
+    case MbWayRefund = 55;
+    case MultibancoCharge = 56;
+    case MultibancoRefund = 57;
     case PayconiqCharge = 58;
     case PayconiqRefund = 59;
     case IrisCharge = 60;
     case IrisRefund = 61;
     case OnlineBankingCharge = 62;
     case OnlineBankingRefund = 63;
+    case BancomatPayCharge = 64;
+    case BancomatPayRefund = 65;
     case TbiBankCharge = 66;
     case TbiBankRefund = 67;
+    case PayOnDeliveryCharge = 68;
+    case CardVerification = 69;
+    case SwishCharge = 70;
+    case SwishRefund = 71;
+    case BluecodeCharge = 74;
+    case BluecodeRefund = 75;
+    case SatispayCharge = 78;
+    case SatispayRefund = 79;
+    case KlarnaPreAuth = 80;
+    case KlarnaCapture = 81;
 }
