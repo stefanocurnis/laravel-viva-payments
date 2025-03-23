@@ -18,7 +18,7 @@ class WebhookEvent
         public readonly WebhookEventType $EventTypeId,
         public readonly ?string $Delay,
         public readonly ?int $RetryCount,
-        public readonly ?string $RetryDelay,
+        public readonly ?string $RetryDelayInSeconds,
         public readonly string $MessageId,
         public readonly string $RecipientId,
         public readonly int $MessageTypeId,
@@ -45,7 +45,7 @@ class WebhookEvent
             'EventTypeId' => $eventType,
             'EventData' => $eventData,
             'RetryCount' => $attributes['RetryCount'] ?? null,
-            'RetryDelay' => $attributes['RetryDelay'] ?? null,
+            'RetryDelayInSeconds' => $attributes['RetryDelayInSeconds'] ?? null,
         ]);
     }
 }
